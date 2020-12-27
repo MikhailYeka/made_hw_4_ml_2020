@@ -8,7 +8,7 @@ How does it work?\n
 The model is based on Gaussian Process for regression from GPY library. The model is trained on data of 60 previous days.\n
 2)    **Simulation of daily trading during 2017**\n
 *What should I do?*\n
-1.    Select a start date in the calendar.\n
+1.    Select a final date in the calendar.\n
 2.    Enter the amount of your bet.\n
 3.    The model will imitate the daily trading and build the graph which demonstrates the real and predicted stock price. At the same time the model will return your potential revenue.\n
 How does it work?\n
