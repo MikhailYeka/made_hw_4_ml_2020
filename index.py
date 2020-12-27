@@ -10,7 +10,7 @@ from dash.dependencies import Input, Output
 import pandas as pd
 
 from script_LSTM import full_period, STOCKS_NAMES
-from description import DESCRIPTION
+from models_and_data.description import DESCRIPTION
 
 
 from gaussian_process import get_prediction
@@ -19,9 +19,9 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
-df_boeing = pd.read_csv("boeing.csv")
-df_cisco = pd.read_csv("cisco.csv")
-df_intel = pd.read_csv("intel.csv")
+df_boeing = pd.read_csv("models_and_data/boeing.csv")
+df_cisco = pd.read_csv("models_and_data/cisco.csv")
+df_intel = pd.read_csv("models_and_data/intel.csv")
 
 
 for df in [df_boeing, df_cisco, df_intel]:
