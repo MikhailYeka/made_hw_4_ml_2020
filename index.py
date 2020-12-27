@@ -42,6 +42,7 @@ app.layout = html.Div(children=[
         placeholder="Select a tool...",
         style={'width': '40%'}
     ),
+    html.Label("Enter cash for Automatic trader:"),
     html.Div([
         dcc.Input(
             id="input", type="number", placeholder="input with range",
@@ -61,14 +62,6 @@ app.layout = html.Div(children=[
     html.Div(id='load'),
     html.Div(id='output'),
 ])
-
-
-@app.callback(Output('input', component_property='style'),
-              Input('tool', 'value'),
-              )
-def get_money(tool):
-    if tool == "NN":
-        return {'display': 'block'}
 
 
 @app.callback(
